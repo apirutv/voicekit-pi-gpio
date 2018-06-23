@@ -12,7 +12,7 @@ class GPIOController():
         self.setupPin()
  
     def setupPin(self):
-    	GPIO.setmode(GPIO.BCM)
+        GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.bcmPinNumber, self.gpioMode)
  
     def cleanupGPIO(self):
